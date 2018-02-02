@@ -25,7 +25,7 @@ SECRET_KEY = 'b8@$hlr*ep3u$^fmop^bd9w(vvp2$tw4(7h3n!+0y9nbd1p6d1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','.yinjiang.tech']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','.yinjiang.me']
 
 
 # Application definition
