@@ -20,16 +20,31 @@
 // Related Topics 位运算 动态规划 👍 799 👎 0
 
 package leetcode.editor.cn;
-public class CountingBits {
+
+
+class CountingBits {
     public static void main(String[] args) {
         Solution solution = new CountingBits().new Solution();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] countBits(int n) {
+        int[] res = new int[n+1];
+        res[0] = 0;
+        for (int i = 1; i <= n; i++) {
+            // 如果是奇数，则1的个数是上一个数+1; 如果是偶数，则跟它的1/2 的数的1的个数一样
+            if (i % 2 == 1) {
+                res[i] = res[i - 1] + 1;
+                continue;
+            } else {
+                res[i] = res[i/2];
+                continue;
+            }
+        }
+        return res;
+    }
 
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }

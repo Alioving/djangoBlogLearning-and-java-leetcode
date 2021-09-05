@@ -43,7 +43,7 @@
 // Related Topics 递归 记忆化搜索 数学 动态规划 👍 315 👎 0
 
 package leetcode.editor.cn;
-public class FibonacciNumber {
+class FibonacciNumber {
     public static void main(String[] args) {
         Solution solution = new FibonacciNumber().new Solution();
     }
